@@ -7,9 +7,13 @@ const Input = styled('input', {
     fullWidth: {
       true: s.fullwidth,
     },
+    inline: {
+      true: s.inline,
+    },
   },
   defaultVariants: {
     fullWidth: false,
+    inline: false,
   },
 })
 

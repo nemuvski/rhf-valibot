@@ -1,0 +1,28 @@
+.group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  inline-size: 100%;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.gap {
+  &--xs {
+    gap: 0.5rem;
+  }
+  &--sm {
+    gap: 1rem;
+  }
+  &--md {
+    gap: 2rem;
+  }
+  &--lg {
+    gap: 3rem;
+  }
+  &--xl {
+    gap: 4rem;
+  }
+}

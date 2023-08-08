@@ -7,9 +7,13 @@ const Textarea = styled('textarea', {
     fullWidth: {
       true: s.fullwidth,
     },
+    inline: {
+      true: s.inline,
+    },
   },
   defaultVariants: {
     fullWidth: false,
+    inline: false,
   },
 })
 

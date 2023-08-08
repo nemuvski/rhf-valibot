@@ -1,4 +1,7 @@
 export * from './components/Container.tsx'
+export * from './components/Group.tsx'
 export * from './components/Input.tsx'
+export * from './components/Label.tsx'
+export * from './components/Paragraph.tsx'
 export * from './components/Stack.tsx'
 export * from './components/Textarea.tsx'
