@@ -1,0 +1,15 @@
+:root {
+  --theme-color-bg: #fff;
+  --theme-color-text: #333;
+
+  --theme-color-border: #ccc;
+
+  font-size: 16px;
+}
+
+body {
+  padding-inline: 0.5rem;
+  color: var(--theme-color-text);
+  background-color: var(--theme-color-bg);
+  font-size: 1rem;
+}

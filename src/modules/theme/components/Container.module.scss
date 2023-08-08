@@ -1,0 +1,25 @@
+.layout {
+  inline-size: 100%;
+}
+
+.max-width {
+  &--xs {
+    max-inline-size: 30rem;
+  }
+  &--sm {
+    max-inline-size: 40rem;
+  }
+  &--md {
+    max-inline-size: 50rem;
+  }
+  &--lg {
+    max-inline-size: 60rem;
+  }
+  &--xl {
+    max-inline-size: 70rem;
+  }
+}
+
+.center {
+  margin-inline: auto;
+}
