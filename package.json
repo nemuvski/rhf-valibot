@@ -1,0 +1,41 @@
+{
+  "version": "0.1.0",
+  "name": "rhf-valibot",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf dist node_modules/.vite",
+    "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --check './**/*.{cjs,js,jsx,ts,tsx}'",
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "nacss": "^2.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.8",
+    "@types/react": "^18.2.18",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "@vitejs/plugin-react": "^4.0.4",
+    "eslint": "8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-react": "^7.33.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-regexp": "^1.15.0",
+    "prettier": "^3.0.1",
+    "sass": "^1.64.2",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-html": "^3.2.0"
+  }
+}
