@@ -1,3 +1,4 @@
+export * from './components/Button.tsx'
 export * from './components/Container.tsx'
 export * from './components/Group.tsx'
 export * from './components/Input.tsx'

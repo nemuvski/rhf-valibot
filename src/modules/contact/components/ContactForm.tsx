@@ -2,7 +2,7 @@ import { valibotResolver } from '@hookform/resolvers/valibot'
 import { useForm } from 'react-hook-form'
 import { ContactSchema } from '../schema'
 import type { ContactSchemaType } from '../schema'
-import { Group, Input, Label, Paragraph, Stack, Textarea } from '~/modules/theme'
+import { Button, Group, Input, Label, Paragraph, Stack, Textarea } from '~/modules/theme'
 
 const ContactForm = () => {
   const {
@@ -31,7 +31,11 @@ const ContactForm = () => {
             名前
             <Input type='text' fullWidth {...register('name')} />
           </Label>
-          {errors.name && <Paragraph fontSize='sm'>{errors.name.message}</Paragraph>}
+          {errors.name && (
+            <Paragraph fontColor='invalid' fontSize='xs'>
+              {errors.name.message}
+            </Paragraph>
+          )}
         </div>
 
         <div>
@@ -39,7 +43,11 @@ const ContactForm = () => {
             メールアドレス
             <Input type='email' fullWidth {...register('email')} />
           </Label>
-          {errors.email && <Paragraph fontSize='sm'>{errors.email.message}</Paragraph>}
+          {errors.email && (
+            <Paragraph fontColor='invalid' fontSize='xs'>
+              {errors.email.message}
+            </Paragraph>
+          )}
         </div>
 
         <div>
@@ -47,16 +55,20 @@ const ContactForm = () => {
             メッセージ
             <Textarea fullWidth {...register('message')} />
           </Label>
-          {errors.message && <Paragraph fontSize='sm'>{errors.message.message}</Paragraph>}
+          {errors.message && (
+            <Paragraph fontColor='invalid' fontSize='xs'>
+              {errors.message.message}
+            </Paragraph>
+          )}
         </div>
 
         <Group gap='sm'>
-          <button type='reset' disabled={!isDirty || isSubmitting}>
+          <Button colorSchema='secondary' type='reset' disabled={!isDirty || isSubmitting}>
             リセット
-          </button>
-          <button type='submit' disabled={!isValid || isSubmitting}>
+          </Button>
+          <Button colorSchema='primary' type='submit' disabled={!isValid || isSubmitting}>
             送信
-          </button>
+          </Button>
         </Group>
       </Stack>
     </form>
