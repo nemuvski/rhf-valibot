@@ -17,4 +17,4 @@ const Stack = styled('div', {
   },
 })
 
-export default Stack
+export { Stack }
