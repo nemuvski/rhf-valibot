@@ -12,7 +12,8 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "sb": "storybook dev -p 6006",
-    "sb:build": "storybook build"
+    "sb:build": "storybook build",
+    "sb:clean": "rimraf storybook-static"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.2.0",
