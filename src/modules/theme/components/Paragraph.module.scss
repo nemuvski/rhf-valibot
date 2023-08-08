@@ -1,5 +1,12 @@
 .paragraph {
+  color: var(--theme-color-text);
   line-height: 1.8;
+}
+
+.font-color {
+  &--invalid {
+    color: var(--theme-color-ptrn-invalid);
+  }
 }
 
 .font-size {

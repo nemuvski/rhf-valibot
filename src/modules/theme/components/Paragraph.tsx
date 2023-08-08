@@ -4,6 +4,9 @@ import s from './Paragraph.module.scss'
 const Paragraph = styled('p', {
   css: s.paragraph,
   variants: {
+    fontColor: {
+      invalid: s['font-color--invalid'],
+    },
     fontSize: {
       xs: s['font-size--xs'],
       sm: s['font-size--sm'],
