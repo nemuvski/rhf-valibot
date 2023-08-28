@@ -16,13 +16,13 @@
     "sb:clean": "rimraf storybook-static"
   },
   "dependencies": {
-    "@hookform/resolvers": "^3.2.0",
+    "@hookform/resolvers": "^3.3.0",
     "@phntms/css-components": "^0.4.0",
     "nacss": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.4",
-    "valibot": "^0.11.1"
+    "valibot": "^0.13.1"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.2.1",
